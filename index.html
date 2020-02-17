@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <main>
+        <div class="title">
+                <p>International Weather Forecast</p>
+                <div id="icon" style="padding-top: 30px; padding-bottom: 30px;">
+                        <i class='fas fa-sun'></i>
+                        <i class='fas fa-snowflake'></i>
+                        <i class='fas fa-cloud-showers-heavy'></i>
+                        <i lass='fas fa-temperature-high'></i>
+                        <i class='fas fa-temperature-low'></i>
+                </div>
+                <div id="local-date"></div>
+                <div id="local-time"></div>
+        </div>
+        
+    </main>
+
+    <section id="search">
+
+        <div class="centered">
+            <strong>Search city</strong>
+            <br>
+            <input id="search-bar" style="width: 30%; padding: 5px;" placeholder="Search by city..."> 
+            <i id="search-icon" style="cursor: pointer;" class="glyphicon glyphicon-search"></i>
+        </div>
+
+        <div id="search-history" class="form-group" style="width: 30%; margin: 0 auto; text-align: center; margin-top: 20px;">
+                <label style="color: black;">Search history</label>
+                <select id="city-list" class="form-control">
+                </select>
+        </div>  
+    
+    </section>
+
+    <hr> 
+
+    <section id="weather-section">
+
+        <div id="today" class="today-weather">
+            <h2>Current Weather In</h2>
+            <div id="today-location"></div>
+            <div id="today-content">
+                <i class='fas fa-sun center-icon' style="color: white; padding-top: 10px;"></i>
+                <p id="today-day" class="theme" style="font-size: 1.5em;"></p>
+                <p id="today-date" class="theme" style="font-size: 1.5em;"></p>
+                <p id="today-status" class="theme" style="font-size: 1.5em;">Cloudy</p>
+                <p id="today-temp" class="temp-font" style="color: white; font-size: 2.5em;">80</p>
+                <p id="today-feel" style="padding-left: 10%;">Feels Like: </p>
+                <p id="today-high" style="padding-left: 10%; margin-top: 5px;">High: </p>
+                <p id="today-low" style="padding-left: 10%;margin-top: 5px;">Low: </p>
+                <p id="today-humid" style="padding-left: 10%;">Humidity: </p>
+                <p id="today-precip" style="padding-left: 10%;">Precipitation: </p>
+                <p id="today-wind" style="padding-left: 10%;">Wind: </p>
+                <p id="today-uv" style="padding-left: 10%;">UV index: <span id="UV">100.9</span> </p>
+            </div>
+        </div>
+
+        <h2>5 Days Forecast</h2>
+
+        <div style="width: 100%;" id="forecast">
+            <div id="1" class="forecast-weather">
+                <p id="day" class="theme"></p>
+                <p id="date" class="theme"></p>
+                <i class='fas fa-sun center-icon'></i>
+                <p id="temp" class="temp-font">80</p>
+                <p id="high" style="padding-left: 5px;">High: </p>
+                <p id="low" style="padding-left: 5px;">Low: </p>
+                <p id="precip" style="padding-left: 5px;">Precip: </p>
+                <p id="wind" style="padding-left: 5px;">Wind: </p>
+            </div>
+            <div id="2" class="forecast-weather">
+                    <p id="day" class="theme" ></p>
+                    <p id="date" class="theme"></p>
+                    <i class='fas fa-sun center-icon'></i>
+                    <p id="temp" class="temp-font">80</p>
+                    <p id="high" style="padding-left: 5px;">High: </p>
+                    <p id="low" style="padding-left: 5px;">Low: </p>
+                    <p id="precip" style="padding-left: 5px;">Precip: </p>
+                    <p id="wind" style="padding-left: 5px;">Wind: </p>   
+            </div>
+            <div id="3" class="forecast-weather">
+                    <p id="day" class="theme" ></p>
+                    <p id="date" class="theme"></p>
+                    <i class='fas fa-sun center-icon'></i>
+                    <p id="temp" class="temp-font">80</p>
+                    <p id="high" style="padding-left: 5px;">High: </p>
+                    <p id="low" style="padding-left: 5px;">Low: </p>
+                    <p id="precip" style="padding-left: 5px;">Precip: </p>
+                    <p id="wind" style="padding-left: 5px;">Wind: </p>
+            </div>
+            <div id="4"class="forecast-weather">
+                    <p id="day" class="theme" ></p>
+                    <p id="date" class="theme"></p>
+                    <i class='fas fa-sun center-icon'></i>
+                    <p id="temp" class="temp-font">80</p>
+                    <p id="high" style="padding-left: 5px;">High: </p>
+                    <p id="low" style="padding-left: 5px;">Low: </p>
+                    <p id="precip" style="padding-left: 5px;">Precip: </p>
+                    <p id="wind" style="padding-left: 5px;">Wind: </p>
+            </div>
+            <div id="5"class="forecast-weather">
+                    <p id="day" class="theme" ></p>
+                    <p id="date" class="theme"></p>
+                    <i class='fas fa-sun center-icon'></i>
+                    <p id="temp" class="temp-font">80</p>
+                    <p id="high" style="padding-left: 5px;">High: </p>
+                    <p id="low" style="padding-left: 5px;">Low: </p>
+                    <p id="precip" style="padding-left: 5px;">Precip: </p>
+                    <p id="wind" style="padding-left: 5px;">Wind: </p>
+            </div>
+        </div>
+                
+    </section>
+    <script src="lib/logic.js"></script>
+
+</body>
+</html>
