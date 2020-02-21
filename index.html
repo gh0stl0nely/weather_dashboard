@@ -16,7 +16,7 @@
 <body>
     <main>
         <div class="title">
-                <p>International Weather Forecast</p>
+                <p>Live Weather Forecast</p>
                 <div id="icon" style="padding-top: 30px; padding-bottom: 30px;">
                         <i class='fas fa-sun'></i>
                         <i class='fas fa-snowflake'></i>
@@ -54,17 +54,16 @@
         <div id="today" class="today-weather">
             <h2>Current Weather In</h2>
             <div id="today-location"></div>
-            <div id="today-content">
-                <i class='fas fa-sun center-icon' style="color: white; padding-top: 10px;"></i>
+            <div id="today-content">    
+                <i id="today-icon" style="color: white; padding-top: 10px;"></i>
                 <p id="today-day" class="theme" style="font-size: 1.5em;"></p>
                 <p id="today-date" class="theme" style="font-size: 1.5em;"></p>
-                <p id="today-status" class="theme" style="font-size: 1.5em;">Cloudy</p>
-                <p id="today-temp" class="temp-font" style="color: white; font-size: 2.5em;">80</p>
+                <p id="today-status" class="theme" style="font-size: 1.5em;"></p>
+                <p id="today-temp" class="temp-font" style="color: white; font-size: 2em;"></p>
                 <p id="today-feel" style="padding-left: 10%;">Feels Like: </p>
                 <p id="today-high" style="padding-left: 10%; margin-top: 5px;">High: </p>
                 <p id="today-low" style="padding-left: 10%;margin-top: 5px;">Low: </p>
                 <p id="today-humid" style="padding-left: 10%;">Humidity: </p>
-                <p id="today-precip" style="padding-left: 10%;">Precipitation: </p>
                 <p id="today-wind" style="padding-left: 10%;">Wind: </p>
                 <p id="today-uv" style="padding-left: 10%;">UV index: <span id="UV">100.9</span> </p>
             </div>
@@ -76,52 +75,52 @@
             <div id="1" class="forecast-weather">
                 <p id="day" class="theme"></p>
                 <p id="date" class="theme"></p>
-                <i class='fas fa-sun center-icon'></i>
-                <p id="temp" class="temp-font">80</p>
+                <i></i>
+                <p id="status" class="theme"></p>
+                <p id="temp" class="temp-font"></p>
                 <p id="high" style="padding-left: 5px;">High: </p>
                 <p id="low" style="padding-left: 5px;">Low: </p>
-                <p id="precip" style="padding-left: 5px;">Precip: </p>
                 <p id="wind" style="padding-left: 5px;">Wind: </p>
             </div>
             <div id="2" class="forecast-weather">
                     <p id="day" class="theme" ></p>
                     <p id="date" class="theme"></p>
-                    <i class='fas fa-sun center-icon'></i>
-                    <p id="temp" class="temp-font">80</p>
-                    <p id="high" style="padding-left: 5px;">High: </p>
-                    <p id="low" style="padding-left: 5px;">Low: </p>
-                    <p id="precip" style="padding-left: 5px;">Precip: </p>
-                    <p id="wind" style="padding-left: 5px;">Wind: </p>   
+                    <i></i>
+                    <p id="status" class="theme"></p>
+                    <p id="temp" class="temp-font"></p>
+                    <p id="high" style="padding-left: 5px; font-size: 1em;">High: </p>
+                    <p id="low" style="padding-left: 5px; font-size: 1em;">Low: </p>
+                    <p id="wind" style="padding-left: 5px; font-size: 1em;">Wind: </p>   
             </div>
             <div id="3" class="forecast-weather">
                     <p id="day" class="theme" ></p>
                     <p id="date" class="theme"></p>
-                    <i class='fas fa-sun center-icon'></i>
-                    <p id="temp" class="temp-font">80</p>
-                    <p id="high" style="padding-left: 5px;">High: </p>
-                    <p id="low" style="padding-left: 5px;">Low: </p>
-                    <p id="precip" style="padding-left: 5px;">Precip: </p>
-                    <p id="wind" style="padding-left: 5px;">Wind: </p>
+                    <i></i>
+                    <p id="status" class="theme"></p>
+                    <p id="temp" class="temp-font"></p>
+                    <p id="high" style="padding-left: 5px; font-size: 1em;">High: </p>
+                    <p id="low" style="padding-left: 5px; font-size: 1em;">Low: </p>
+                    <p id="wind" style="padding-left: 5px;font-size: 1em;">Wind: </p>
             </div>
             <div id="4"class="forecast-weather">
                     <p id="day" class="theme" ></p>
                     <p id="date" class="theme"></p>
-                    <i class='fas fa-sun center-icon'></i>
-                    <p id="temp" class="temp-font">80</p>
-                    <p id="high" style="padding-left: 5px;">High: </p>
-                    <p id="low" style="padding-left: 5px;">Low: </p>
-                    <p id="precip" style="padding-left: 5px;">Precip: </p>
-                    <p id="wind" style="padding-left: 5px;">Wind: </p>
+                    <i></i>
+                    <p id="status" class="theme"></p>
+                    <p id="temp" class="temp-font"></p>
+                    <p id="high" style="padding-left: 5px;font-size: 1em;">High: </p>
+                    <p id="low" style="padding-left: 5px;font-size: 1em;">Low: </p>
+                    <p id="wind" style="padding-left: 5px;font-size: 1em;">Wind: </p>
             </div>
             <div id="5"class="forecast-weather">
                     <p id="day" class="theme" ></p>
                     <p id="date" class="theme"></p>
-                    <i class='fas fa-sun center-icon'></i>
-                    <p id="temp" class="temp-font">80</p>
-                    <p id="high" style="padding-left: 5px;">High: </p>
-                    <p id="low" style="padding-left: 5px;">Low: </p>
-                    <p id="precip" style="padding-left: 5px;">Precip: </p>
-                    <p id="wind" style="padding-left: 5px;">Wind: </p>
+                    <i></i>
+                    <p id="status" class="theme"></p>
+                    <p id="temp" class="temp-font"></p>
+                    <p id="high" style="padding-left: 5px;font-size: 1em;">High: </p>
+                    <p id="low" style="padding-left: 5px;font-size: 1em;">Low: </p>
+                    <p id="wind" style="padding-left: 5px;font-size: 1em;">Wind: </p>
             </div>
         </div>
                 
