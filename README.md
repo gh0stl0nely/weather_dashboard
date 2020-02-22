@@ -16,7 +16,12 @@ Working internet
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://devdocs.io/javascript/)
 * [jQuery](https://jquery.com/)
+
+## API used
+
 * [OpenWeatherAPI](https://openweathermap.org)
+* [Geocode.xyz](https://geocode.xyz/)
+
 
 ## Authors
 
